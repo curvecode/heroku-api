@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <%- include('../partials/header.ejs', { title: 'About' }) %>
+</head>
+
+<body>
+    <% include ../partials/nav.ejs %>
+    <h1>About</h1>
+    <ul>
+        <% data.forEach(function(drink) { %>
+        <li><%= drink.name %> - <%= drink.drunkness %></li>
+        <% }); %>
+    </ul>
+</body>
+
+</html>
